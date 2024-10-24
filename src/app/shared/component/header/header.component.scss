@@ -1,0 +1,21 @@
+@import "@barreau/styles-barreau/variables";
+.logo {
+    background-image: url("/logo.png");
+    background-size: 200px 58px;
+    background-repeat: no-repeat;
+    height: 58px;
+    width: 200px;
+  }
+  .logo-secondaire {
+    background-image: url("/BQ_rouge.png");
+    background-size: 200px 200px;
+    height: 200px;
+  }
+  ul {
+    right: 20px;
+  }
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

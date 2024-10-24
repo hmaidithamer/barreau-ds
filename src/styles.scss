@@ -1,1 +1,102 @@
-/* You can add global styles to this file, and also import other style files */
+@import "variables";
+@import "@barreau/styles-barreau/styles-barreau";
+@import 'bootstrap/scss/bootstrap';
+
+body,
+html {
+  margin: 0;
+  padding-left: 0;
+  font-size: $tailleDefaut;
+  font-weight: $poidsDefaut !important;
+  font-family: $policeDefaut !important;
+  width: fit-content;
+  overflow-x: hidden;
+}
+
+body .page-non-autorise {
+  height: 100vh;
+  width: 100vw;
+}
+
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+
+input[type="checkbox"] {
+  box-sizing: border-box;
+  border-radius: 0;
+}
+
+input[type="checkbox"]:checked {
+  border: 1px solid $secondaire;
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+select.form-select {
+  border: 1px solid $gris;
+}
+
+//input[type="date"]::-webkit-calendar-picker-indicator {
+//  color: rgba(0, 0, 0, 0);
+//  opacity: 1;
+//  display: block;
+//  background: url(assets/images/date_icon_BQ.svg) no-repeat;
+//  width: 22px;
+//  height: 24px;
+//  padding: 2px;
+//  border-width: thin;
+//  box-sizing: border-box;
+//}
+
+
+.radio,
+.check {
+  width: 20px !important;
+  height: 20px !important;
+  margin-top: 0;
+  margin-right: 10px;
+}
+
+.radio:checked,
+.radio.checked,
+.check:checked,
+.check.checked {
+  background-color: $secondaire !important;
+  border-color: $secondaire !important;
+  color: $secondaire !important;
+}
+
+.radio:checked[type="radio"],
+.check:checked[type="check"] {
+  background-image: unset;
+}
+
+.div-date-historique{
+  display: flex;
+}
+
+.texte-date-historique {
+  font-size: 24px;
+  border-bottom: 4px solid $secondaire;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+h1{
+  margin-top: $margeDefaut;
+}
+
+h2, h3{
+  margin-top: 8px;
+}
+
+h4{
+  font-weight: bold;
+}

@@ -1,0 +1,7 @@
+<header [ngClass]="appName === 'inspection' ? 'entete-secondaire' : 'entete-primaire'" class="d-flex align-items-center justify-content-around pt-3">
+  <div [ngClass]="appName === 'inspection' ? 'logo-secondaire' : ''" class="logo"></div>
+  <ul class="list-unstyled">
+    <li class="pb-3 fs-4" >{{name}} <i  class="icone-utilisateur fs-2"></i></li>
+    <li (click)="logout()" role="button" class="fs-5">Retour à l'accueil</li>
+  </ul>
+</header>
